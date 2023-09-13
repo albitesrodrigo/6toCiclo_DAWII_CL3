@@ -1,0 +1,47 @@
+-- borra la bd si existe
+DROP DATABASE IF EXISTS bd_automovil;
+-- creamos la bd
+CREATE DATABASE bd_automovil;
+-- activamos la bd
+USE bd_automovil;
+
+-- Insert's
+insert into tb_color(cod_color,des_color) values (null,'Negro');
+insert into tb_color(cod_color,des_color) values (null,'Blanco');
+insert into tb_color(cod_color,des_color) values (null,'Rojo');
+insert into tb_color(cod_color,des_color) values (null,'Gris');
+insert into tb_color(cod_color,des_color) values (null,'Verde');
+insert into tb_color(cod_color,des_color) values (null,'Azul');
+-- testeamos los insert's
+select * from tb_color
+
+-- Insert's
+insert into tb_marca(cod_marca,des_marca) values (null,'Toyota');
+insert into tb_marca(cod_marca,des_marca) values (null,'Nissan');
+insert into tb_marca(cod_marca,des_marca) values (null,'Hyundai');
+insert into tb_marca(cod_marca,des_marca) values (null,'Honda');
+insert into tb_marca(cod_marca,des_marca) values (null,'KIA');
+insert into tb_marca(cod_marca,des_marca) values (null,'BMW');
+-- testeamos los insert's
+select * from tb_marca
+
+-- Insert's
+insert into tb_motor(cod_motor,des_motor) values (null,'1.200 c.c');
+insert into tb_motor(cod_motor,des_motor) values (null,'1.500 c.c');
+insert into tb_motor(cod_motor,des_motor) values (null,'1.800 c.c');
+insert into tb_motor(cod_motor,des_motor) values (null,'2.200 c.c');
+insert into tb_motor(cod_motor,des_motor) values (null,'2.400 c.c');
+insert into tb_motor(cod_motor,des_motor) values (null,'2.500 c.c');
+-- testeamos los insert's
+select * from tb_motor
+
+-- Insert's
+insert into tb_automovil(cod_automovil, modelo, anio_fabricacion, cilindrada, num_puertas, precio , cod_color, cod_marca, cod_motor ) values (null,'Rush',2022,1.5,4,23000,1,1,2);
+insert into tb_automovil(cod_automovil, modelo, anio_fabricacion, cilindrada, num_puertas, precio , cod_color, cod_marca, cod_motor ) values (null,'Elantra',2023,1.2,4,27000,2,3,1);
+insert into tb_automovil(cod_automovil, modelo, anio_fabricacion, cilindrada, num_puertas, precio , cod_color, cod_marca, cod_motor ) values (null,'Soluto',2021,1.2,4,19000,3,5,1);
+insert into tb_automovil(cod_automovil, modelo, anio_fabricacion, cilindrada, num_puertas, precio , cod_color, cod_marca, cod_motor ) values (null,'x6',2024,2.4,4,37000,4,6,5);
+insert into tb_automovil(cod_automovil, modelo, anio_fabricacion, cilindrada, num_puertas, precio , cod_color, cod_marca, cod_motor ) values (null,'Rio',2019,1.8,4,20000,5,5,3);
+insert into tb_automovil(cod_automovil, modelo, anio_fabricacion, cilindrada, num_puertas, precio , cod_color, cod_marca, cod_motor ) values (null,'Corolla',2022,1.5,4,24000,6,1,2);
+insert into tb_automovil(cod_automovil, modelo, anio_fabricacion, cilindrada, num_puertas, precio , cod_color, cod_marca, cod_motor ) values (null,'CR-V',2024,2.2,4,28000,1,4,4);
+-- testeamos los insert's
+select * from tb_automovil

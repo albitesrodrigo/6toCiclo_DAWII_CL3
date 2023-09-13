@@ -1,0 +1,13 @@
+package com.sistemabackbautista.dtos;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class MotorUpdateDTO {
+
+    private Long codMotor;
+    private String desMotor;
+
+}
